@@ -4,15 +4,11 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_score
-import keras
 from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import GridSearchCV
 from keras.models import Sequential
 from keras.layers import Dense
-from keras.layers import Dropout
 
 accuracy_pca, roc_auc_pca, accuracy_cls, roc_auc_cls, ar_cls, cm_cls = [], [], [], [], [], []
 
