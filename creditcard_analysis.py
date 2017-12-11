@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import matplotlib.figure as figure
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -9,7 +8,7 @@ import matplotlib.gridspec as gridspec
 from Optimization import Optimization
 
 # Importing the dataset
-dataset = pd.read_csv('creditcard.csv')
+dataset = pd.read_csv('data/creditcard.csv')
 
 # Seperating fraudulent and legitimate transactions for Time variable
 dataset.iloc[:,0][(dataset.iloc[:,30]==1)].describe()
